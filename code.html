@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ASK Digital | Customer Engagement &amp; Modern MarTech</title>
+<!-- Tailwind CSS v3 with forms and container queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration for brand matching -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#00438F',
+              hoverBlue: '#00336E',
+              dark: '#111827',
+              grayText: '#4B5563',
+              subtleBg: '#F8FAFC',
+              sand: '#DFBE99',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles for Layout & Visuals -->
+<style data-purpose="custom-typography">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    .hero-title {
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+    }
+
+    .period-dot {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: #E2C9A8;
+      border-radius: 50%;
+      margin-left: 2px;
+      vertical-align: baseline;
+      position: relative;
+      top: -2px;
+    }
+  </style>
+<style data-purpose="hub-card-decorations">
+    .hub-shadow {
+      box-shadow: 0 16px 40px -8px rgba(0, 67, 143, 0.08), 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+<!-- END: Custom Styles -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" data-snapdom="injected-import"><link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida-public/AB6AXuB-VtuM6y7ZGNr9Ft4jLvk1f18cVKMmyBh85wJSXkE330vEDWdPRX6gogWKV0gatS9yWIaQHxo7Sdr2URBK4c8sFwApXj9ITNPK6iBOyiWAu8lA-PtDQh28Sx_Kq1q2I17Mpf9yguWnaU8PHq5RbdUVTV7tS75zQ0lRpr9v9X5_U0vHdbZ0uH2RDAsOAILnlc6-ZVsJCeJZJcDZCJvAgeed797J6omVCQWAHgqy2kswtQnWior1oD5CWzDUkQpydhTCcSw"><link rel="shortcut icon" href="https://lh3.googleusercontent.com/aida-public/AB6AXuAX6VBe7K-DpNE6lYyYT6znNst26yNxEZfaPX8hBhFuZ6EWgel3OV26LrWYnaN_EOzNi649pHAhwm4AI086n_JufMRLudoXZK0eey0FmucXdY_0g2WNCUXch5rk8Wj3AftKbRq03zSDE3Jp3qSgkSPQGqdVv7Vcif6ZmHZjBpNV0DASSawX8XEqKsfNSk8Ewf0v7IVfc9VJnjqvalXz_pZWuh1U0cZ6aVcTx5kLzElz6LkQw2VkDJYIvGfS_491XAvXObM"><link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/aida-public/AB6AXuBlFALF25dIs_0ywxQ5xLUMiCgs8q5M7MBBtm6qRz8iDsDZd59R9VMtwveL7ZbUBgzRtJlVECW_Lik4D7LEXuHy3DG1xVtzylYUJ1m55f9tMwOajzqD4AkjflTdp1zyzZJZmJARAZ1WKTSLJhsrtKJzQ4EINMrzrrcJGGJURx7UvYt9bEWZLziJzATgUo5R2RG-H4_71UnaIlaQW_dc6chbRcipFvVrDrfGC8LYUuYiAdacyzR6rD5cYCkhfmg3cYppWMQ"></head>
+<body class="min-h-screen flex flex-col justify-between text-brand-dark relative selection:bg-brand-blue selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-20 py-5 sm:py-6 flex items-center justify-between z-20 relative" data-purpose="header-navigation">
+<!-- Brand Logo -->
+<a aria-label="ASK Digital Homepage" class="flex items-center" href="#">
+<img alt="ASK Digital" class="h-14 sm:h-[70px] lg:h-[72px] w-auto object-contain transition-all" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-c1MPqh9Fa03CN5SpLIOFzQ4VXRdgygHoBJyFTAR6p42cV9XHFoG87cE0418wkeFufpVmMPozAgwAJ2_N15ZERcwS38NHVJuPLCr_bAR5jUl745EXHmrJKJnWr3-FfuvcsckSyDEnXPrQbnxtxk3FHo7vRnHovcp5VbytzvL7iu75LVaf-aSBo_oU-s625WHlJDdC9HK1tFY9l1OgDHTrtvQYpOFMciiZAyFYon4DsT9lAToRmshXpd7B48S1f5bIXY6UYdB4FAEHuM4">
+</a>
+<!-- Center Navigation Links -->
+<nav class="hidden md:flex items-center space-x-10 text-[15.5px] font-medium text-gray-700">
+<a class="hover:text-brand-blue transition-colors duration-150" href="#services">Services</a>
+<a class="hover:text-brand-blue transition-colors duration-150" href="#braze-support">Braze Support</a>
+<a class="hover:text-brand-blue transition-colors duration-150" href="#about">About</a>
+<a class="hover:text-brand-blue transition-colors duration-150" href="#contact">Contact</a>
+</nav>
+<!-- Header Action Button -->
+<div class="flex items-center">
+<a class="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-hoverBlue text-white text-[15px] font-medium px-6 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow" data-purpose="header-cta-button" href="#book">
+<span class="">Book a call</span>
+<svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="relative flex-1 flex items-center w-full max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-20 py-8 lg:py-14 z-10">
+<!-- Background Minimalist Geometric Shapes Pattern -->
+
+<!-- Hero Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full relative z-10">
+<!-- Left Column: Value Proposition & Copy -->
+<section class="lg:col-span-6 xl:col-span-6 pr-0 lg:pr-6" data-purpose="hero-copy-column">
+<!-- Main Headline -->
+<h1 class="hero-title text-5xl sm:text-6xl xl:text-[76px] font-black tracking-tight text-[#0F172A] leading-[1.03]">
+<span class="">Customer</span><br>
+<span class="text-brand-blue">engagement</span><br>
+<span class="">is changing</span><span aria-hidden="true" class="period-dot"></span>
+</h1>
+<!-- Subheading -->
+<h2 class="mt-8 text-xl sm:text-2xl font-bold text-[#1E293B] leading-snug tracking-tight">
+          The best technology decisions start with asking better questions.
+        </h2>
+<!-- Descriptive Paragraph -->
+<p class="mt-6 text-base sm:text-[17px] text-[#475569] leading-relaxed max-w-xl font-normal">
+          ASK Digital helps organisations review, optimise and modernise customer engagement through practical advice, platform expertise and successful delivery across Salesforce, Braze and modern Martech.
+        </p>
+<!-- CTA Button Group -->
+<div class="mt-10 flex flex-wrap items-center gap-4 sm:gap-5" data-purpose="hero-cta-group">
+<!-- Primary CTA Button -->
+<a class="inline-flex items-center gap-2.5 bg-brand-blue hover:bg-brand-hoverBlue text-white text-[15.5px] font-semibold px-7 py-3.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg" href="#book-consultation">
+<span class="">Book a 30-minute call</span>
+<svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<!-- Secondary CTA Button -->
+<a class="inline-flex items-center gap-2.5 bg-white hover:bg-slate-50 text-[#1E293B] border border-slate-300 text-[15.5px] font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:border-slate-400" href="#services">
+<span class="">Explore services</span>
+<svg aria-hidden="true" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</section>
+<!-- Right Column: Central Integration Architecture Hub Visual -->
+<section class="lg:col-span-6 xl:col-span-6 flex justify-center items-center relative" data-purpose="martech-hub-visual">
+<div class="w-full max-w-[560px] lg:max-w-[620px] aspect-square relative flex items-center justify-center p-2 sm:p-4">
+<!-- Direct rendering of the Marketing Integration Hub diagram asset -->
+<img alt="ASK Digital Integration Hub linking Strategy, Salesforce CRM, Braze Personalised Engagement, and Implementation &amp; Optimisation" class="w-full h-full object-contain filter drop-shadow-sm select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA56hFc_ZP04qF3NfCNRiBOuT7UY1oxO1h6scRtBvwqNatgaRmNDD3mDy0PiZMtSOU6t6Xb2BNmx9jXxyReebjLXnUZf9LNVO1kFl0ekP6C2ftEIecAfJqR-xgaBWJQ_a7gBi3ixtSXjdnaMS9sR_JhoLgxctQo4YiwMmD0NZueeGOFzucw-o4NGlmhWhg_oESI3ewWN220vQvVu0Io1w_FC8vvbOn0JqEzmTiqwvXixDYg1Abnn7i5cQIGKfU9fLv1R8DEUfkr9NtRkvA">
+</div>
+</section>
+</div>
+</main>
+<!-- END: HeroSection -->
+<!-- BEGIN: MinimalFooterArea (Balance buffer) -->
+<footer class="w-full py-4 text-center text-xs text-gray-400 relative z-10" data-purpose="page-footer">
+<div class="max-w-[1440px] mx-auto px-6 sm:px-12 flex justify-between items-center text-gray-400">
+<span class="">© ASK Digital. All rights reserved.</span>
+<div class="flex space-x-6 text-gray-400">
+<a class="hover:underline" href="#">Privacy Policy</a>
+<a class="hover:underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<!-- END: MinimalFooterArea -->
+
+
+
+
+</body></html>
